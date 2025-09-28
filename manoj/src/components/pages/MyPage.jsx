@@ -10,11 +10,12 @@ export const MyPage = () => {
 
     React.useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['React Developer', 'Web Developer', 'Backend Developer'],
+            //strings: ['React Developer', 'Web Developer', 'Backend Developer'],
+            strings: ['AWS DevOps engineer', 'Cloud Architect', 'Cloud Engineer',],
             typeSpeed: 50,
             backSpeed: 30,
             backDelay: 1500,
-            loop: true, // ✅ makes it repeat continuously
+            loop: true, // makes it repeat continuously
         });
 
         return () => {
@@ -86,28 +87,46 @@ export const MyPage = () => {
                                 <li>MongoDB</li>
                             </ul>
                         </div>
+                        <div className="box">
+                            <h2>Cloud Technologies</h2>
+                            <ul>
+                                <li>AWS</li>
+                                <li>Git & GitHub</li>
+                                <li>Docker</li>
+                                <li>Kubernetes</li>
+                                <li>Terraform</li>
+                                <li>Jenkins</li>
+                            </ul>
+                        </div>
                     </div>
                     <hr className="box-hr" />
 
                     <div className="myPortfolio">
                         <h1 id="portfolio">My Portfolio</h1>
                     </div>
-                    <div className="p-box-container">
-                        <div className="p-box">
-                            <h2>Skyline Utils</h2>
-                            <img src={image2} alt="Skyline Utils" />
-                            <p>
-                                Skyline Utils (text utils) app is a versatile tool designed to
-                                perform a variety of text processing and manipulation tasks.
-                            </p>
+                    <a
+                        href="https://skylinedude.github.io/text-utils/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none" }}
+                    >
+                        <div className="p-box-container">
+                            <div className="p-box">
+                                <h2>Skyline Utils</h2>
+                                <img src={image2} alt="Skyline Utils" />
+                                <p>
+                                    Skyline Utils (text utils) app is a versatile tool designed to
+                                    perform a variety of text processing and manipulation tasks.
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </section>
             </main>
             <footer>
                 <div className="flex-footer">
                     <div className="footer-rights">
-                        Copyright &#169; 
+                        Copyright &#169;
                         <a href="https://skylinedude.github.io/manoj-portfolio/">
                             Manoj's Portfolio
                         </a> | All rights reserved |
